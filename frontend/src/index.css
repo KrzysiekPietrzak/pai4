@@ -1,0 +1,375 @@
+@font-face {
+  font-family: 'Cinzel';
+  src: url('/public/Cinzel-Regular.ttf')  format('truetype')
+}
+
+body {
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  user-select: none;  
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: url("/public/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.not-found {
+  height: 100vh;
+  width: 100%;
+  background: url("/public/not-found-bg.png") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  font-size: 72px;
+  font-family: 'Cinzel', serif;
+  padding-top: 300px;
+  /* margin-bottom: -300px; */
+  color: white;
+}
+
+._404 {
+  font-weight: 800;
+  font-size: 110px;
+}
+
+.login-panel,
+.register-panel {
+  background: rgba(255, 255, 255, 0.97);
+  padding: 20px;
+  width: 200px;
+  height: 370px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 15px 9px -6px #777;
+  font-family: 'Cinzel', serif;
+  user-select: none;
+}
+
+.login-panel label,
+.register-panel label {
+  padding: 10px;
+  width: 50px;
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: -5px;
+}
+
+.login-panel input,
+.register-panel input {
+  width: 87% !important;
+  margin-left: 9px;
+  font-size: 13px;
+  padding: 5px;
+  border: 2px solid gray;
+  font-family: 'Cinzel', serif;
+}
+
+.register-panel input {
+  width: 81% !important;
+}
+
+input[type=submit] {
+  float: right;
+  margin-right: 19px;
+  margin-top: 30px;
+  background: white;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+}
+
+input[type=submit]:hover {
+  color: white;
+  background: black;
+}
+
+h4 {
+  letter-spacing: -0.7px;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.info {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 11px;
+}
+
+.repass {
+  width: 110px!important;
+}
+
+.register-panel {
+  padding-left: 26px;
+}
+
+nav {
+  height: 50px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  font-size: 18px;
+  line-height: 50px;
+  user-select: none;
+  overflow: hidden;
+  background-color: #1d1609;
+  color: white;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+
+}
+
+nav button,
+.add button,
+.delete button {
+  float: right;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 3px;
+  background: #0d6efd;
+  border: none;
+  color: white;
+  margin-right: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+}
+
+.delete button {
+  float: none;
+  margin: none;
+  margin-top: -2px;
+  background-color: rgb(146, 146, 146);
+}
+
+.delete-comment button {
+  font-size: 16px;
+  border-radius: 3px;
+  background: #0d6efd;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  margin-top: -2px;
+  background-color: rgb(146, 146, 146);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.delete-comment button:hover {
+  background: white;
+  color: gray;
+}
+
+.delete-hide {
+  display: none;
+}
+
+.add button {
+  float: none;
+  position: absolute;
+  right: -15px;
+  top: -2px;
+  background-color: gray;
+}
+
+.delete button:hover {
+  background: rgb(206, 205, 205);
+  color: white;
+}
+
+.add button:hover {
+  background: white;
+  color: gray;
+}
+
+nav button:hover {
+  background: white;
+  color: #0d6efd;
+}
+
+nav .home {
+  float: left;
+  padding: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: unset;
+}
+
+nav .home a {
+  color: white;
+}
+
+nav .home:hover {
+  background: #0d6efd;
+}
+
+nav .home:hover a {
+  color: white;
+
+}
+
+nav .header {
+  font-weight: 600;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/public/bg-map.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-wrapper {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.post {
+  box-shadow: 0 10px 6px -6px black;
+  color: white;
+  border-radius: 5px;
+  background: rgba(128, 128, 128, 0.842);
+  margin-top: 15px;
+  padding: 10px;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  user-select: none;
+}
+
+.post:hover {
+  background: white;
+  color: rgba(128, 128, 128, 0.842);
+}
+
+.author {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.likes {
+  border-top: 1px solid rgb(168, 167, 167);
+  margin-top: 10px;
+  padding-top: 7px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.post:hover .swords {
+  background-color: rgba(128, 128, 128, 0.842);
+}
+
+.swords {
+  background-color: white;
+  mask: url("/public/swords.svg") no-repeat center;
+  mask-size: 30px;
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.likes-amount {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.likes-wrapper {
+  float: right;
+  padding-right: 5px;
+}
+
+.likes-wrapper:hover {
+  border-radius: 10px;
+  background: gray;
+  color: white;
+}
+
+.likes-wrapper:hover .swords {
+  background-color: white;
+}
+
+.comment {
+  color: white;
+  margin-top: 10px;
+  background-color: rgba(128, 128, 128, 0.542);
+  padding: 10px;
+  font-family: 'Cinzel', serif;
+  position: relative;
+}
+
+.comment:last-child {
+  margin-bottom: 30px;
+}
+
+.comment .author {
+  margin-top: 10px;
+}
+
+.add-panel{
+  background: rgba(128, 128, 128, 0.596);
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+.add-panel label {
+  width: 110px;
+  display: inline-block;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.add-panel .l_textarea {
+  vertical-align: top;
+}
+
+.add-panel input,
+.add-panel textarea { 
+  padding: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  min-width: 77%;
+  max-width: 77%;
+  box-sizing: border-box;
+}
+
+.add-panel input[type=submit] {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.link_color {
+  color: rgb(196, 196, 196);
+}
+
+.break {
+  padding-top: 20px;
+}
+
+.comment_area {
+  margin-top: 6px;
+}
