@@ -227,4 +227,4 @@ if __name__ == '__main__':
 # przykład użycia funkcji
         create_missing_tables()
     CORS(app)
-    app.run(host='localhost', port=5000, debug=True)
+    app.run(host='https://pai4.vercel.app', port=5000, debug=True)
